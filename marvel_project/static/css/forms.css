@@ -1,0 +1,43 @@
+/* Style Email and Password Fields */
+fieldset{
+    padding-bottom: 15px;
+}
+ .form-control{
+    border-radius: 30px;
+    border-color: red;
+    width: 60%;
+ }
+
+#name-fields{
+    display: flex;
+}
+#name-fields .form-control{
+    width: 60%
+}
+#first-name, #last-name{
+    width: 400px
+}
+.btn-primary:hover{
+    background-color: red;
+    border-color: black;
+}
+
+.wrapper{
+    height: 95vh;
+    background-image: url(../images/spiderman-image.jpeg);
+    background-size: cover;
+    width: 100%;
+    background-position: 35% 50%;
+    position: relative;
+    margin-right: 0;
+}
+
+.wrapper2{
+    height: 95vh;
+    background-image: url(../images/deadpool-image.jpeg);
+    background-size: cover;
+    width: 100%;
+    background-position: 35% 50%;
+    position: relative;
+    margin-right: 0;
+}

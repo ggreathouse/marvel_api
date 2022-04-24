@@ -1,0 +1,31 @@
+<link rel="stylesheet" href="../static/css/forms.css">
+
+<form method = 'POST'>
+    {{ form.hidden_tag() }}
+    <div class="form-group">
+        <div id="name-fields">
+            <fieldset id="first-name">
+                {{form.first_name.label('First Name')}}
+                {{form.first_name(class= 'form-control', placeholder = 'Enter First Name')}}
+            </fieldset>
+            <fieldset id="last-name">
+                {{form.last_name.label('Last Name')}}
+                {{form.last_name(class= 'form-control', placeholder = 'Enter Last Name')}}
+            </fieldset>
+        </div>
+        <fieldset id="id-field">
+
+            {{ form.username.label }}
+            {{ form.username(class= 'form-control', placeholder = 'Enter Username Here') }}
+
+        </fieldset>
+        <fieldset id="pass-field">
+
+            {{ form.password.label }}
+            {{ form.password(class = 'form-control', placeholder = 'Place Password Here') }}
+
+        </fieldset>
+
+        {{ form.submit_button(class = 'btn btn-primary') }}
+    </div>
+</form>

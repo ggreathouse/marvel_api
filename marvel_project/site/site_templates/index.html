@@ -1,0 +1,88 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<!-- Flask flashed message -->
+<div class="container">
+    {% with messages = get_flashed_messages(with_categories = true) %}
+        {% if messages %}
+            {% for cat, msg in messages %}
+                {% if cat == 'user-created' %}
+                    <div class="alert alert-success">
+                        {{ msg }}
+                        <button type="button" class="close" data-dismiss="alert" onclick="this.parentElement.style.display='none'">&times;</button>
+                    </div>
+                {% endif %}
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+</div>
+
+<!-- Header Section -->
+<header class="header-section">
+    <div class="header-text">
+        <h1>Create Your Own Superhero Team</h1>
+        <p>Customize your application using this RESTful API</p>
+        <p>The possibilities are endless!</p>
+        <div id="header-buttons">
+            <a class="btn btn-primary" href="{{ url_for('auth.signin') }}" role="button">Sign In</a>
+            <a class="btn btn-primary" href="{{ url_for('auth.signup') }}" role="button">Sign Up</a>
+        </div>
+    </div>
+</header>
+<!-- End of Header Section -->
+
+    <!-- Feature 1 -->
+<div class="container">
+    <section id ="feature-1" class="row">
+        <div id="feature-text-1" class="col-12 col-md-6">
+            <h2>Build Using Insomnia</h2>
+            <p>
+                Insomnia is a free cross-platform application that takes the pain out of interacting
+                with and designing HTTP-based APIs. Insomnia combines an easy-to-use interface with advanced 
+                functionality like authentication helpers, code generation, and environment variables.
+            </p>
+            <div id="insomnia-button">
+                <a class="btn btn-primary" href="https://insomnia.rest/download" role="button">Download Insomnia</a>
+            </div>
+        </div>
+        <div class="col-12 col-md-6">
+            <img src="../../static/images/insomnia-image.jpg" alt="Insomnia Screenshot" id="insomnia-image">
+        </div>
+    </section>
+    <!-- End Feature 1 -->
+
+    <!-- Feature 2 -->
+    <section id = "feature-2" class="row">
+        <div class="col-12 col-md-6">
+            <img src="../../static/images/growth.png" alt="Growth Image" id="growth-image">
+        </div>
+        <div id = "feature-text-2" class="col-12 col-md-6">
+            <h2>Continue to Grow</h2>
+            <p>
+                With this API you can expand your ideas and evolve your projects in meaningful ways.
+            </p>
+        </div>
+    </section>
+    <!-- End Feature 2 -->
+
+    <!-- Community Section -->
+    <section id = "feature-3" class="row">
+        <div id = "feature-text-3" class="col-12 col-md-6">
+            <h2>Community is Everything</h2>
+            <p>
+                Collaborate with like minded people who nerd out over marvel and love to code cool projects!
+                You never know which next collaboration could out your project on the map.
+                Don't be shy and make some friends!
+            </p>
+            <div id="community-button">
+                <a class="btn btn-primary" href="https://github.com/ggreathouse" role="button">Start on Github</a>
+                <a class="btn btn-primary" href="#" role="button">Join our Slack</a>
+            </div>
+        </div>
+        <div class="col-12 col-md-6">
+            <img src="../../static/images/collaboration-image.png" alt="Community Image" id="community-image">
+        </div>
+    </section>
+    <!-- End Community Section -->
+
+{% endblock content %}

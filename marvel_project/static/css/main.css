@@ -1,0 +1,201 @@
+
+/* Nav Bar Styles */
+#brand-logo{
+    width: 10%;
+}
+.navbar-header{
+    display: flex;
+    justify-content: space-between;
+}
+ul.horizontal-list{
+    list-style: none;
+    padding-top: 1vh;
+    justify-self: right;
+    padding-right: 10vw;
+}
+ul.horizontal-list a{
+    text-decoration: none;
+}
+
+ul.horizontal-list li{
+    display: inline;
+    text-decoration: none;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    color: black;
+    
+}
+
+ul.horizontal-list li:hover{
+    border: 4px solid yellow;
+    border-radius: 20px;
+    background-color: red;
+    padding: 0.5vw 2vw, 0.5vw, 2vw;
+    color:white
+
+}
+
+/* Header Styles */
+
+.header-section{
+    height: 70vh;
+    background-image: linear-gradient(to right bottom, rgba(54, 58, 60, 0.7), rgba(24, 17, 25, 0.6)), url(../images/avengers-image.jpeg);
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    margin-bottom: 10vh;
+}
+
+.header-text h1, .header-text p, #header-buttons{
+    color: white;
+    margin-left: 2vw;
+    text-align: center;
+    padding-right: 60%
+    
+}
+.header-text h1{
+    padding-top: 5vh;
+}
+
+div#header-buttons .btn-primary{
+    border: 2px solid white;
+    background-color: transparent;
+    border-radius: 20px;
+    margin-right: .2vw;
+    padding: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+div#header-buttons .btn-primary:hover{
+    background-color: white;
+    color: black
+}
+
+/* Feature Button Styles */
+.btn-primary{
+    border-radius: 20px;
+    margin-right: .2vw;
+    padding: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Feature 1 Styles */
+#insomnia-image{
+    width: 90%;
+    max-width: 100%;
+    margin-right: 3vw;
+}
+#feature-text-1{
+    text-align: center;
+}
+#feature-1{
+    margin-bottom: 10vh;
+}
+#insomnia-button .btn-primary{
+    background-color: transparent;
+    border: 2px solid rgb(89,36,207);
+    color: rgb(89,36,207)
+}
+#insomnia-button .btn-primary:hover{
+    background-color: rgb(89,36,207);
+    color: white;
+}
+/* Feature 2 Styles */
+#feature-2{
+    margin-bottom: 10vh;
+}
+#growth-image{
+    width: 90%;
+    max-width: 100%;
+    margin-left: 3vw;
+}
+#feature-text-2{
+    text-align: center;
+    padding-top: 5%;
+}
+
+/* Feature 3 Styles */
+
+#community-image{
+    width: 80%;
+    max-width: 100%;
+    margin-right: 3vw;
+}
+
+#feature-text-3{
+    text-align: center;
+    padding-top: 5%;
+}
+
+#feature-3{
+    margin-bottom: 10vh;
+}
+
+#community-button .btn-primary{
+    background-color: transparent;
+    border: 2px solid blue;
+    color: blue
+}
+#community-button .btn-primary:hover{
+    background-color: blue;
+    color: white
+}
+
+/* Footer Styles */
+#footer{
+    margin-bottom: 2vh;
+    border-top:3px solid rgba(24, 17, 25, 0.6)
+}
+#marvel-logo{
+    width: 20%;
+    margin-top: 1vh
+}
+.footer-items li{
+    display: inline;
+    list-style: none;
+    padding: 0 2vw 0 2vw;
+    font-size: small;
+}
+
+.footer-items a{
+    text-decoration: none;
+    color: rgb(88, 88, 88)
+}
+
+.footer-items{
+    text-align: right;
+    padding-top: 2%
+}
+
+/* Profile Styles */
+.profile-header-text{
+    text-align: center;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    color:white 
+}
+
+.profile-details-header{
+    margin-top: 5vh;
+    color: white
+}
+.list-group-item{
+    border: none;
+}
+
+#profile-image{
+    width:90%;
+    max-width: 100%;
+    margin-bottom: 5vh;
+    margin-top: 5vh;
+}
+
+#details-text{
+    text-align: left;
+    padding-top: 10vh
+}
+
+#profile-main{
+    background-color: black;
+}
